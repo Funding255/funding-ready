@@ -18,6 +18,48 @@
         input, select, textarea { padding: 10px; border: 1px solid #ccc; border-radius: 4px; }
         button { padding: 10px; background-color: #d4af37; color: #fff; border: none; cursor: pointer; }
         footer { background-color: #f8f8f8; text-align: center; padding: 20px; border-top: 2px solid #d4af37; }
+
+        @media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    section {
+        padding: 30px 15px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .packages {
+        grid-template-columns: 1fr;
+    }
+
+    .package {
+        font-size: 14px;
+    }
+
+    form {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    header img {
+        height: 60px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+}
+
     </style>
 </head>
 <body>
